@@ -1,0 +1,36 @@
+name: Report a bug / الإبلاغ عن مشكلة
+description: Something in the demo does not work / شيء لا يعمل في النسخة التجريبية
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please do not include passwords or real personal data. Security issues go through SECURITY.md.
+        لا تُضمّن كلمات مرور أو بيانات شخصية حقيقية. وتُرسل الثغرات الأمنية بحسب ملف SECURITY.md.
+  - type: input
+    id: page
+    attributes:
+      label: Page / الصفحة
+      description: The address or the name of the page / رابط الصفحة أو اسمها
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened? / ماذا حدث؟
+      description: What you did, what you expected and what you saw / ما فعلته وما توقعته وما ظهر لك
+    validations:
+      required: true
+  - type: dropdown
+    id: language
+    attributes:
+      label: Language / اللغة
+      options:
+        - العربية
+        - English
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and device / المتصفح والجهاز

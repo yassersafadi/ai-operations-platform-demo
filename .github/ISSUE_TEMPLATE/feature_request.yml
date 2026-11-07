@@ -1,0 +1,16 @@
+name: Suggest a feature / اقتراح ميزة
+description: An idea to make the platform better / فكرة لتحسين المنصة
+labels: [enhancement]
+body:
+  - type: textarea
+    id: need
+    attributes:
+      label: What do you need? / ما الذي تحتاجه؟
+      description: The problem you want to solve / المشكلة التي تريد حلها
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your idea / فكرتك
+      description: How it could work / كيف يمكن أن تعمل
